@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Quản lý bán hàng</title>
+    
+    <link type="text/css" href="main.css" rel="stylesheet" />
+	
+    
+</head>
+
+<body>
+	<!--HEADER-->
+    <div class="header">
+    	<a href="#" title="Quản Lý Bài Viết" style="outline:none;"><h1>Quản Lý Bài Viết</h1></a>
+        <div class="logout">
+            Xin chào <b>Trần Văn Lộc</b> | <a href="#" onclick="logout()" title="Log out">Log out</a>
+        </div>
+    </div><!--END HEADER-->
+    
+    <!--CONTENT-->
+    <div class="content">
+        <div class="container">
+    	<table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Bài Viết Mới</label><label class="validation-error hide" id="fullNameValidationError">Bạn Phải Viết Bài Rồi Đăng.</label>
+                        <input type="text" name="baiviet" id="baiviet">
+                    
+                        <input type="submit" value="Đăng bài">
+                    </div>
+                </form>
+            
+                <table class="list" id="showList">
+                    <thead>
+                        
+                            <th>Bài Viết Mới</th>
+                            <th> Thao Tác</th>
+                        
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </div> 
+     <div id="spoiler" role="aria-hidden">        
+    </div>   
+    
+    </div>
+
+    <script src="main.js"></script>
+                       
+    </script>
+    
+</body>
+</html>

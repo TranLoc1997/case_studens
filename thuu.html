@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a = []; 
+
+		function SaveDataToLocalStorage(data) 
+		{  
+		    var receiveddata = JSON.stringify(data);
+		     
+		    a.push(receiveddata); 
+		    alert(a); 
+
+		    localStorage.setItem('session', a); 
+
+		} 
+	</script>
+
+</body>
+</html>
